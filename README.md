@@ -6,7 +6,7 @@ It has the following proportions at these breakpoints:
 Above 960px: 3 6 3
 Below 960px: 4 8
 
-Below 960px, the right & left 3 width content & sidebar columns move to the right 4 width column, with left above the right sidebar.
+Below 960px, the right & left 3 width sidebar columns move to the left 4 width column, with left above the right sidebar.
 
 This sass file is intended for Drupal 7.x Omega4 themes using singularity grids.  This assumption is reflected in the class names (.l-page, header.l-header, etc).  Do not enable layout extensions in the Omega4 settings.
 
