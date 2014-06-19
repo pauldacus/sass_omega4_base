@@ -16,6 +16,10 @@ Border colors have been added to grid elements for debugging and should obviousl
 Usage: The best way to use this grid is to copy the contents of the omega-subtheme.styles.scss file into your Omega4 child theme, which should be:
 sites/all/themes/omega4_child_theme/sass/omega4_child_theme.styles.scss
 
+Remove the grid guides by deleting "@include background-grid;" line.
+
+Also remove all "border" styles.  They are there for debugging only.
+
 Remember to set grid variables in variables folder:
 
 Set variables in variables/_grid.scss file
