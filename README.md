@@ -1,4 +1,4 @@
-This is a simple responsive singularity/sass grid with breakpoints at 350px, 720px, and 1080px.
+This is a simple responsive singularity/sass 12 column grid with breakpoints at 350px, 720px, and 1080px.
 
 Below 1080px this grid is 90% fluid width, above it is fixed at 960px.
 (Why 1080px? Because 960px/.90 ~= 1080px+/-, so there is minimal jitter on resize)
