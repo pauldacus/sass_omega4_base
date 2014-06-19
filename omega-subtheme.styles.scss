@@ -24,8 +24,7 @@
 .l-page {
 	width: 960px;
 	margin: 0 auto;
-	@include background-grid;
-	@include breakpoint(0 960px) {
+	@include breakpoint(0 1080px) {
 		width: 90%;
 	}
 
@@ -36,6 +35,9 @@ header.l-header, div.l-main, footer.l-footer {
 	@include background-grid;
 	border: solid #F00 1px;
 }
+header > div {
+	border: solid #0F0 1px;
+}
 .l-content {
 	@include grid-span(6,4);
 	@include breakpoint(0 349px) {
@@ -44,7 +46,7 @@ header.l-header, div.l-main, footer.l-footer {
 	@include breakpoint(350px 719px) {
 		@include grid-span(8,5);
 	}
-	@include breakpoint(720px 960px) {
+	@include breakpoint(720px 1080px) {
 		@include grid-span(8,5);
 	}
 	border: solid #00F 1px;
@@ -57,7 +59,7 @@ header.l-header, div.l-main, footer.l-footer {
 	@include breakpoint(350px 719px) {
 		@include grid-span(4,1);
 	}
-	@include breakpoint(720px 960px) {
+	@include breakpoint(720px 1080px) {
 		@include grid-span(4,1);
 		@include clearfix;
 	}
@@ -73,7 +75,7 @@ header.l-header, div.l-main, footer.l-footer {
 		@include grid-span(4,1);
 		clear: left;
 	}
-	@include breakpoint(720px 960px) {
+	@include breakpoint(720px 1080px) {
 		@include grid-span(4,1);
 		clear: left;
 	}
