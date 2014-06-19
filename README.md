@@ -11,3 +11,13 @@ Below 960px, the right & left 3 width sidebar columns move to the left 4 width c
 This sass file is intended for Drupal 7.x Omega4 themes using singularity grids.  This assumption is reflected in the class names (.l-page, header.l-header, etc).  Do not enable layout extensions in the Omega4 settings.
 
 Border colors have been added to grid elements for debugging and should obviously be removed in production.
+
+Usage: The best way to use this grid is to copy the contents of the omega-subtheme.styles.scss file into your Omega4 child theme, which should be:
+sites/all/themes/omega4_child_theme/sass/omega4_child_theme.styles.scss
+
+Remember to set grid variables in variables folder:
+
+Set variables in variables/_grid.scss file
+$grids: 12;
+$gutters: 1/4;
+
