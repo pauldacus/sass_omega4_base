@@ -25,21 +25,62 @@
 	width: 960px;
 	margin: 0 auto;
 	@include background-grid;
+	@include breakpoint(0 960px) {
+		width: 90%;
+	}
 
 }	
 header.l-header, div.l-main, footer.l-footer {
 	@include grid-span(12,1);
 	@include clearfix;
+	@include background-grid;
+	border: solid #F00 1px;
 }
 .l-content {
 	@include grid-span(6,4);
+	@include breakpoint(0 349px) {
+		@include grid-span(12,1);
+	}
+	@include breakpoint(350px 719px) {
+		@include grid-span(8,5);
+	}
+	@include breakpoint(720px 960px) {
+		@include grid-span(8,5);
+	}
+	border: solid #00F 1px;
 }
 .l-region--sidebar-first {
 	@include grid-span(3,1);
+	@include breakpoint(0 349px) {
+		@include grid-span(12,1);
+	}
+	@include breakpoint(350px 719px) {
+		@include grid-span(4,1);
+	}
+	@include breakpoint(720px 960px) {
+		@include grid-span(4,1);
+		@include clearfix;
+	}
+	border: solid #00F 1px;
 }
 .l-region--sidebar-second {
 	@include grid-span(3,10);
+	@include breakpoint(0 349px) {
+		@include grid-span(12,1);
+		clear: left;
+	}
+	@include breakpoint(350px 719px) {
+		@include grid-span(4,1);
+		clear: left;
+	}
+	@include breakpoint(720px 960px) {
+		@include grid-span(4,1);
+		clear: left;
+	}
+	border: solid #00F 1px;
 }
 .l-region--footer {
 	@include clearfix;
 }
+
+
